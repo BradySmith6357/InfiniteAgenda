@@ -1,1 +1,88 @@
 <!DOCTYPE html>
+<html ng-app="mainModule">
+<head>
+	<title>Infinite Agenda</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-controller="mainTroller">
+	<div class="displaybox">
+		<div>
+			<div class="header">
+				<h1>Week At A Glance</h1>
+			</div>
+			<div class="monday">
+				<div id="blockdisplay">
+					<p id="m"></p>
+				</div>
+				<li class="inputtext1" ng-show="event1">{{mondayEvent}}</li>
+			</div>
+			<div class="inputdisplay">
+				<button ng-click="addEvent1($event)">+</button>
+				<input type="text" placeholder="MONDAY EVENT" ng-model="mondayEvent">
+			</div>
+			<div class="tuesday">
+				<div id="blockdisplay">
+					<p id="t"></p>
+				</div>
+				<li class="inputtext2" ng-show="event2">{{tuesdayEvent}}</li>
+			</div>
+			<div class="inputdisplay">
+				<button ng-click="addEvent2()">+</button>
+				<input type="text" placeholder="TUESDAY EVENT" ng-model="tuesdayEvent">
+			</div>
+		<div class="wednesday">
+			<div id="blockdisplay">
+				<p id="w"></p>
+			</div>
+			<li class="inputtext3" ng-show="event3">{{wednesdayEvent}}</li>
+		</div>
+			<div class="inputdisplay">
+				<button ng-click="addEvent3()">+</button>
+				<input type="text" placeholder="WEDNESDAY EVENT" ng-model="wednesdayEvent">
+			</div>
+			<div class="thursday">
+				<div id="blockdisplay">
+					<p id="r"></p>
+				</div>
+				<li class="inputtext4" ng-show="event4">{{thursdayEvent}}</li>
+			</div>
+			<div class="inputdisplay">
+				<button ng-click="addEvent4()">+</button>
+				<input type="text" placeholder="THURSDAY EVENT" ng-model="thursdayEvent">
+			</div>
+			<div class="friday">
+				<div id="blockdisplay">
+					<p id="f"></p>
+				</div>
+				<li class="inputtext5" ng-show="event5">{{fridayEvent}}</li>
+			</div>
+			<div class="inputdisplay">
+				<button ng-click="addEvent5()">+</button>
+				<input type="text" placeholder="FRIDAY EVENT" ng-model="fridayEvent">
+			</div>
+			<div class="saturday">
+				<div id="blockdisplay">
+					<p id="s"></p>
+				</div>
+				<li class="inputtext6" ng-show="event6">{{saturdayEvent}}</li>
+			</div>
+			<div class="inputdisplay">
+				<button ng-click="addEvent6()">+</button>
+				<input type="text" placeholder="SATURDAY EVENT" ng-model="saturdayEvent">
+			</div>
+			<div class="sunday">
+				<div id="blockdisplay">
+					<p id="sun"></p>
+				</div>
+				<li class="inputtext7" ng-show="event7">{{sundayEvent}}</li>
+			</div>
+			<div class="inputdisplay">
+				<button ng-click="addEvent7()">+</button>
+				<input type="text" placeholder="SUNDAY EVENT" ng-model="sundayEvent">
+		</div>
+	</div>
+
+	
+</body>
